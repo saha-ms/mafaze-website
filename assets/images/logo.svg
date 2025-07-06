@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Logo Mark -->
+  <g id="logo-mark">
+    <!-- M Shape -->
+    <path d="M 10 35 L 10 15 L 20 25 L 30 15 L 30 35" 
+          fill="none" 
+          stroke="url(#logoGradient)" 
+          stroke-width="3" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- Tech Element -->
+    <circle cx="20" cy="25" r="2" fill="url(#logoGradient)"/>
+    <path d="M 20 25 L 15 20 M 20 25 L 25 20 M 20 25 L 15 30 M 20 25 L 25 30" 
+          stroke="url(#logoGradient)" 
+          stroke-width="1.5" 
+          stroke-linecap="round" 
+          opacity="0.5"/>
+  </g>
+  
+  <!-- Company Name -->
+  <text x="45" y="31" 
+        font-family="'Inter', -apple-system, sans-serif" 
+        font-weight="700" 
+        font-size="24" 
+        fill="#111827">Mafaze</text>
+  
+  <!-- Tagline -->
+  <text x="45" y="42" 
+        font-family="'Inter', -apple-system, sans-serif" 
+        font-weight="400" 
+        font-size="9" 
+        fill="#6b7280">IT CONSULTING</text>
+</svg>

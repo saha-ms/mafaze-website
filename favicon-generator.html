@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Generator for Mafaze</title>
+</head>
+<body>
+    <h1>Favicon Generator</h1>
+    <p>Right-click on each canvas and save as image with the specified filename:</p>
+    
+    <!-- Favicon 16x16 -->
+    <div>
+        <h3>favicon-16x16.png (Save this)</h3>
+        <canvas id="favicon16" width="16" height="16"></canvas>
+    </div>
+    
+    <!-- Favicon 32x32 -->
+    <div>
+        <h3>favicon-32x32.png (Save this)</h3>
+        <canvas id="favicon32" width="32" height="32"></canvas>
+    </div>
+    
+    <!-- Apple Touch Icon -->
+    <div>
+        <h3>apple-touch-icon.png (Save this - 180x180)</h3>
+        <canvas id="appleTouch" width="180" height="180"></canvas>
+    </div>
+    
+    <script>
+        function drawFavicon(canvas, size) {
+            const ctx = canvas.getContext('2d');
+            const scale = size / 32;
+            
+            // Background
+            ctx.fillStyle = '#2563eb';
+            ctx.fillRect(0, 0, size, size);
+            
+            // Draw M shape
+            ctx.strokeStyle = '#ffffff';
+            ctx.lineWidth = 2 * scale;
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+            
+            ctx.beginPath();
+            ctx.moveTo(4 * scale, 24 * scale);
+            ctx.lineTo(4 * scale, 8 * scale);
+            ctx.lineTo(16 * scale, 20 * scale);
+            ctx.lineTo(28 * scale, 8 * scale);
+            ctx.lineTo(28 * scale, 24 * scale);
+            ctx.stroke();
+            
+            // Center dot
+            ctx.fillStyle = '#ffffff';
+            ctx.beginPath();
+            ctx.arc(16 * scale, 16 * scale, 2 * scale, 0, Math.PI * 2);
+            ctx.fill();
+        }
+        
+        // Draw favicons
+        drawFavicon(document.getElementById('favicon16'), 16);
+        drawFavicon(document.getElementById('favicon32'), 32);
+        drawFavicon(document.getElementById('appleTouch'), 180);
+    </script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        canvas {
+            border: 1px solid #ccc;
+            display: block;
+            margin: 10px 0 30px 0;
+            image-rendering: pixelated;
+        }
+        #favicon16, #favicon32 {
+            width: 64px;
+            height: 64px;
+        }
+    </style>
+</body>
+</html>

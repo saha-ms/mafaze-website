@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circles -->
+  <circle cx="500" cy="100" r="80" fill="url(#grad1)" opacity="0.1"/>
+  <circle cx="100" cy="300" r="60" fill="url(#grad2)" opacity="0.1"/>
+  
+  <!-- Main computer screen -->
+  <rect x="150" y="80" width="300" height="200" rx="10" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="160" y="90" width="280" height="160" rx="5" fill="#111827"/>
+  
+  <!-- Code lines on screen -->
+  <rect x="170" y="100" width="60" height="3" fill="#2563eb"/>
+  <rect x="240" y="100" width="40" height="3" fill="#8b5cf6"/>
+  <rect x="290" y="100" width="30" height="3" fill="#10b981"/>
+  
+  <rect x="170" y="110" width="80" height="3" fill="#6b7280"/>
+  <rect x="260" y="110" width="50" height="3" fill="#6b7280"/>
+  
+  <rect x="170" y="120" width="40" height="3" fill="#8b5cf6"/>
+  <rect x="220" y="120" width="60" height="3" fill="#2563eb"/>
+  <rect x="290" y="120" width="40" height="3" fill="#6b7280"/>
+  
+  <!-- Server/Cloud elements -->
+  <rect x="380" y="140" width="150" height="100" rx="5" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2"/>
+  <circle cx="400" cy="160" r="3" fill="#10b981"/>
+  <circle cx="410" cy="160" r="3" fill="#fbbf24"/>
+  <rect x="395" y="175" width="120" height="3" fill="#e5e7eb"/>
+  <rect x="395" y="185" width="120" height="3" fill="#e5e7eb"/>
+  <rect x="395" y="195" width="120" height="3" fill="#e5e7eb"/>
+  
+  <!-- Connection lines -->
+  <path d="M 450 190 Q 480 190 480 240" stroke="url(#grad1)" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  <path d="M 150 190 Q 120 190 120 240" stroke="url(#grad2)" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  
+  <!-- Mobile device -->
+  <rect x="70" y="240" width="80" height="120" rx="8" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="78" y="250" width="64" height="90" rx="4" fill="#111827"/>
+  <circle cx="110" cy="350" r="5" fill="#e5e7eb"/>
+  
+  <!-- Security shield -->
+  <path d="M 480 240 L 480 280 Q 480 300 500 310 Q 520 300 520 280 L 520 240 Z" fill="url(#grad2)" opacity="0.8"/>
+  <path d="M 490 255 L 495 265 L 510 250" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Floating elements -->
+  <rect x="250" y="320" width="40" height="40" rx="5" fill="#2563eb" opacity="0.2" transform="rotate(45 270 340)"/>
+  <circle cx="450" cy="50" r="20" fill="#10b981" opacity="0.2"/>
+  <rect x="80" y="100" width="30" height="30" rx="5" fill="#8b5cf6" opacity="0.2"/>
+</svg>

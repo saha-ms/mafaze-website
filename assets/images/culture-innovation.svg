@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <defs>
+    <linearGradient id="innovation-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Light bulb shape -->
+  <g transform="translate(150, 100)">
+    <!-- Bulb -->
+    <path d="M 0 -50 C -25 -50 -40 -30 -40 -10 C -40 10 -30 20 -20 30 L -15 40 L 15 40 L 20 30 C 30 20 40 10 40 -10 C 40 -30 25 -50 0 -50 Z" 
+          fill="url(#innovation-grad)" opacity="0.8"/>
+    
+    <!-- Base -->
+    <rect x="-15" y="40" width="30" height="10" fill="#374151"/>
+    <line x1="-15" y1="45" x2="15" y2="45" stroke="#6b7280" stroke-width="1"/>
+    
+    <!-- Light rays -->
+    <g stroke="#fbbf24" stroke-width="2" stroke-linecap="round">
+      <line x1="0" y1="-70" x2="0" y2="-80" opacity="0.8"/>
+      <line x1="20" y1="-65" x2="28" y2="-73" opacity="0.7"/>
+      <line x1="35" y1="-50" x2="45" y2="-50" opacity="0.6"/>
+      <line x1="40" y1="-30" x2="50" y2="-25" opacity="0.7"/>
+      <line x1="-20" y1="-65" x2="-28" y2="-73" opacity="0.7"/>
+      <line x1="-35" y1="-50" x2="-45" y2="-50" opacity="0.6"/>
+      <line x1="-40" y1="-30" x2="-50" y2="-25" opacity="0.7"/>
+    </g>
+    
+    <!-- Filament -->
+    <path d="M -10 -20 Q 0 -10 10 -20 Q 0 -30 -10 -20" 
+          stroke="white" stroke-width="2" fill="none" opacity="0.9"/>
+  </g>
+  
+  <!-- Floating ideas -->
+  <circle cx="50" cy="50" r="5" fill="#10b981" opacity="0.5"/>
+  <circle cx="250" cy="60" r="4" fill="#06b6d4" opacity="0.5"/>
+  <circle cx="70" cy="150" r="6" fill="#fbbf24" opacity="0.5"/>
+  <circle cx="230" cy="140" r="5" fill="#8b5cf6" opacity="0.5"/>
+</svg>
